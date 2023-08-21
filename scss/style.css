@@ -1,4 +1,202 @@
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.header {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000915 120%), url(/images/bgcskypro2077.png), lightgray 50%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header__content {
+  max-width: 700px;
+  padding-top: 217px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.header__content-heading {
+  color: #FFF;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 0 0 32px 0;
+}
+.header__content-text {
+  max-width: 481px;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+  padding-bottom: 44px;
+}
+.header__content-text_bold {
+  font-weight: 700;
+}
+.header__content-button {
+  padding: 13px 74px 13px 74px;
+  border: none;
+  text-decoration: none;
+  border-radius: 30px;
+  background-color: #9C0332;
+  font-family: Montserrat;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: background-color 0.2s;
+}
+.header__content-button:hover {
+  background-color: #EB443F;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-content: space-between;
+  gap: 32px;
+  background: #000915;
+  padding-bottom: 128px;
+}
+.cards .card {
+  grid-column: span 4;
+  position: relative;
+}
+.cards .card__img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+  border: 3px solid transparent;
+  transition: border 0.3s;
+}
+.cards .card__img:hover {
+  border-radius: 16px;
+  border: 3px solid #44D2FF;
+}
+.cards .card__name {
+  color: #FFF;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+}
+
 * {
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
   padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
 }/*# sourceMappingURL=style.css.map */

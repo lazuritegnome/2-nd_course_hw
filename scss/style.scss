@@ -1,4 +1,104 @@
-* {
-    margin: 0;
-    padding: 0;
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
 }
+
+.header {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000915 120%), url(/images/bgcskypro2077.png), lightgray 50%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__content {
+        max-width: 700px;
+        padding-top: 217px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        &-heading {
+            color: #FFF;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            padding: 0 0 32px 0;
+        }
+
+        &-text {
+            max-width: 481px;
+            color: #FFF;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 32px;
+            padding-bottom: 44px;
+        }
+
+        &-text_bold {
+            font-weight: 700;
+        }
+
+        &-button {
+            padding: 13px 74px 13px 74px;
+            border: none;
+            text-decoration: none;
+            border-radius: 30px;
+            background-color: #9C0332;
+            font-family: Montserrat;
+            color: #FFF;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            transition: background-color 0.2s;
+
+            &:hover {
+                background-color: #EB443F;
+            }
+        }
+    }
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-content: space-between;
+    gap: 32px;
+    background: #000915;
+    padding-bottom: 128px;
+
+    .card {
+        grid-column: span 4;
+        position: relative;
+
+        &__img {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 16px;
+            border: 3px solid transparent;
+            transition: border 0.3s;
+
+            &:hover {
+                border-radius: 16px;
+                border: 3px solid #44D2FF;
+            }
+        }
+
+        &__name {
+            color: #FFF;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 32px;
+            position: absolute;
+            bottom: 32px;
+            left: 32px;
+
+        }
+    }
+}
+@import 'rest.scss'

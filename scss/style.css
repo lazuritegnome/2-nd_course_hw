@@ -5,7 +5,7 @@
 
 .header {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000915 100%), url(/images/bgcskypro2077.png), lightgray 50%;
-  height: 100vh;
+  height: 1024px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,7 +23,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  padding: 0 0 18px 0;
+  padding: 0 0 32px 0;
 }
 .header__content-text {
   max-width: 481px;
@@ -32,10 +32,11 @@
   font-style: normal;
   font-weight: 300;
   line-height: 32px;
-  padding-bottom: 44px;
+  padding-bottom: 32px;
 }
 .header__content-text_bold {
   font-weight: 700;
+  line-height: 32px;
 }
 .header__content-button {
   padding: 13px 74px 13px 74px;
@@ -50,6 +51,7 @@
   font-weight: 400;
   line-height: normal;
   transition: background-color 0.2s;
+  margin-top: 12px;
 }
 .header__content-button:hover {
   background-color: #EB443F;
@@ -59,8 +61,10 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   justify-content: space-between;
-  gap: 32px;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
   background: #000915;
+  padding-top: 128px;
   padding-bottom: 128px;
 }
 .cards .card {
@@ -199,4 +203,54 @@ label {
 
 legend {
   display: block;
+}
+
+@media (max-width: 375px) {
+  .center {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .header {
+    height: 735px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000915 100%), url(/images/mobileheader.png), lightgray;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .header__content {
+    align-items: center;
+    padding-top: 238px;
+  }
+  .header__content-heading {
+    text-align: center;
+    font-size: 32px;
+  }
+  .header__content-text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    padding-bottom: 32px;
+  }
+  .header__content-text_bold {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .header__content-button {
+    margin: 0;
+  }
+  .cards {
+    -moz-column-gap: 0px;
+         column-gap: 0px;
+    row-gap: 32px;
+  }
+  .cards .card {
+    grid-column: span 12;
+    align-items: center;
+  }
+  .cards .card__name {
+    left: 16px;
+  }
+  .cards .card__img {
+    height: 300px;
+  }
 }/*# sourceMappingURL=style.css.map */

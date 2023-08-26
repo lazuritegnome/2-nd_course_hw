@@ -1,0 +1,61 @@
+@media (max-width: 375px) {
+    .center {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .header {
+        height: 735px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000915 100%), url(/images/mobileheader.png), lightgray;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .header__content {
+        align-items: center;
+        padding-top: 238px;
+
+        &-heading {
+            text-align: center;
+            font-size: 32px;
+        }
+
+        &-text {
+            text-align: center;
+            font-size: 14px;
+            line-height: 22px;
+            padding-bottom: 32px;
+        }
+
+        &-text_bold {
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        &-button {
+            margin: 0;
+        }
+    }
+
+    .cards {
+        column-gap: 0px;
+        row-gap: 32px;
+
+        .card {
+
+            grid-column: span 12;
+            align-items: center;
+
+            &__name {
+                left: 16px;
+            }
+
+            &__img {
+                height: 300px;
+
+            }
+        }
+    }
+}

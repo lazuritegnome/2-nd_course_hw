@@ -47,6 +47,9 @@
 //*Задание 5
 
 // let monthNumber = prompt('Введите номер месяца');
+// if (monthNumber < 1 || monthNumber > 12) {
+//     console.log('Пожалуйста, введите корректное значение от 1 до 12!');
+// }
 // switch (monthNumber) {
 //     case '1':
 //         console.log('Январь: Зима');
@@ -85,11 +88,47 @@
 //         console.log('Декабрь: Зима');
 //         break;
 //     default:
-//         if(monthNumber > 12){
-//             alert("Введите месяц от 1 до 12!")
+//         if(isNaN(monthNumber)){
+//         console.log('Вы ввели что-то не то( попробуйте снова!');
 //         }
 //         break;
 // }
+
+//* задание 5, вариант решения №2
+
+// let monthNumber = prompt('Введите номер месяца');
+// if (monthNumber < 1 || monthNumber > 12) {
+//     console.log('Пожалуйста, введите корректное значение от 1 до 12!');
+// }else{
+//     let season;
+// }
+// switch (monthNumber) {
+//     case '1':
+//     case '2':
+//     case '12':
+//     season = 'Зима';
+//         break;  
+//     case '3':
+//     case '4':
+//     case '5':
+//     season = 'Весна';
+//         break;
+//     case '6':
+//     case '7':
+//     case '8':
+//     season = 'Лето';
+//         break;
+//     case '9':
+//     case '10':
+//     case '11':
+//     season = 'Осень';
+//     default:
+//         if(isNaN(monthNumber)){
+//             console.log('Вы ввели что-то не то( попробуйте снова!');
+//         }
+//         break;
+// }
+// console.log(`месяц ${monthNumber} принадлежит к сезону ${season}`);
 
 //*Задание 7 
 

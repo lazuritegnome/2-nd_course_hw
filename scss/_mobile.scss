@@ -58,4 +58,25 @@
             }
         }
     }
+
+    .game {
+        &__content {
+            flex-wrap: wrap;
+            gap: 64px;
+
+            &-info {
+                text-align: center;
+                align-items: center;
+
+                &-heading {
+                    color: #FFF;
+                    font-size: 32px;
+                }
+
+                &-text {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 }

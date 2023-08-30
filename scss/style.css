@@ -4,7 +4,7 @@
 }
 
 .header {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000915 100%), url(/images/bgcskypro2077.png), lightgray 50%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000915 100%), url("../images/bgcskypro2077.png"), lightgray 50%;
   height: 1024px;
   background-position: center;
   background-repeat: no-repeat;
@@ -92,6 +92,60 @@
   position: absolute;
   bottom: 32px;
   left: 32px;
+  pointer-events: none;
+}
+
+.game {
+  background-color: #000915;
+  height: 800px;
+  display: flex;
+  align-items: center;
+}
+.game__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 135px;
+  align-items: center;
+}
+.game__content-info {
+  max-width: 584px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: start;
+}
+.game__content-info-heading {
+  color: #FFF;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.game__content-info-text {
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+}
+.game__content-info-button {
+  width: 234.063px;
+  padding: 13px 74px 13px 74px;
+  border: none;
+  text-decoration: none;
+  border-radius: 30px;
+  background-color: #9C0332;
+  font-family: Montserrat;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  transition: background-color 0.2s;
+}
+.game__content-info-button:hover {
+  background-color: #EB443F;
 }
 
 * {

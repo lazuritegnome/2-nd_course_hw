@@ -89,7 +89,7 @@
 //         break;
 //     default:
 //         if(isNaN(monthNumber)){
-//         console.log('Вы ввели что-то не то( попробуйте снова!');
+//         console.log('Вы ввели что-то не то( попробуйте снова!'); // or braek;
 //         }
 //         break;
 // }
@@ -155,6 +155,18 @@
 //     console.log("Неудалось определить ваше устройство.");
 //     }
 
+//* Исправленый вариант задания 8, по условию
+
+// let clientOS = confirm("Выберите вашу операционную систему:\nЖмите 'ОК' для iOS\nЖмите 'Отмена' для Android");
+
+// if (clientOS === true) { 
+// console.log("Установите версию приложения для iOS по ссылке.");
+// } else if (clientOS === false) { 
+// console.log("Установите версию приложения для Android по ссылке.");
+// } else {
+// console.log("Некорректный выбор операционной системы.");
+// }
+
 //*Задание 9
 // let clientDeviceOS = ""; 
 // let clientDeviceYear = 2015; 
@@ -173,3 +185,22 @@
 // } else {
 // console.log("Установите приложение по ссылке.");
 // }
+
+//* Исправленый вариант задания 9, по условию
+
+// let clientOS = confirm("Выберите вашу операционную систему:\nЖмите 'ОК' для iOS\nЖмите 'Отмена' для Android");
+// let clientDeviceYear = 2015;
+
+// if (clientOS === true) {
+// if (clientDeviceYear < 2015) {
+// console.log("Установите облегченную версию приложения для iOS по ссылке.");
+// } else {
+// console.log("Установите приложение для iOS по ссылке.");
+// }
+// } else if (clientOS === false) { 
+// if (clientDeviceYear < 2015) {
+// console.log("Установите облегченную версию приложения для Android по ссылке.");
+// } else {
+// console.log("Установите приложение для Android по ссылке.");
+// }
+// } 

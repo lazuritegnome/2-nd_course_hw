@@ -204,3 +204,23 @@
 // console.log("Установите приложение для Android по ссылке.");
 // }
 // } 
+
+// let clientOS = confirm("Выберите вашу операционную систему:\nЖмите 'ОК' для iOS\nЖмите 'Отмена' для Android");
+// let clientDeviceYear = 2015;
+// let clientYear = Number(prompt('введите год производства вашего телефона'));
+
+
+// if (clientOS === true) {
+// if (clientDeviceYear > clientYear) {
+// console.log("Установите облегченную версию приложения для iOS по ссылке.");
+// } else {
+// console.log("Установите приложение для iOS по ссылке.");
+// }
+// } else if (clientOS === false) { 
+// if (clientDeviceYear > clientYear) {
+// console.log("Установите облегченную версию приложения для Android по ссылке.");
+// } else {
+// console.log("Установите приложение для Android по ссылке.");
+// }
+// } 
+

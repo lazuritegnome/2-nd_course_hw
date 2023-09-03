@@ -42,6 +42,7 @@
     .cards {
         column-gap: 0px;
         row-gap: 32px;
+        padding-bottom: 0;
 
         .card {
 
@@ -64,7 +65,9 @@
             flex-wrap: wrap;
             gap: 64px;
             padding-top: 179px;
-
+            &_reversed{
+                padding-top: 136px;
+            }
 
             &-info {
                 text-align: center;

@@ -83,8 +83,8 @@
 // console.log(getSquareNumber());
 
 // *задание 4
-// const yearsQuestion = (askYear) => {
-//     askYear = Number(prompt('Сколько вам лет?'));
+// const yearsQuestion = () => {
+//     let askYear = Number(prompt('Сколько вам лет?'));
 //     if (askYear < 0) {
 //         console.log('Вы ввели неверное значение');
 //     } else if (askYear >= 0 && askYear <= 12){
@@ -96,8 +96,8 @@
 // yearsQuestion();
 
 // *задание 4 return
-// const getYearsQuestion = (askYear) => {
-//     askYear = Number(prompt('Сколько вам лет?'));
+// const getYearsQuestion = () => {
+//      let askYear = Number(prompt('Сколько вам лет?'));
 //     if (askYear < 0) {
 //         return 'Вы ввели неправильное значение';
 //     } else if (askYear >= 0 && askYear <= 12){
@@ -110,9 +110,9 @@
 
 // *Задание 5
 
-// const getMultipli = (a, b) => {
-//     a = Number(prompt('введите первое число'));
-//     b = Number(prompt('введите второе число'));
+// const getMultipli = () => {
+//     let a = Number(prompt('введите первое число'));
+//     let b = Number(prompt('введите второе число'));
 
 //     if (isNaN(a) || (isNaN(b))) {
 //         return('Одно или оба значения не являются числом');
